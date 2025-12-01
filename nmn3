@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>20 tooni niilbr</title>
+</head>
+<body>
+
+    <div id="inputs">
+        <input type="number" placeholder="1-р тоо">
+        <input type="number" placeholder="2-р тоо">
+        <input type="number" placeholder="3-р тоо">
+        <input type="number" placeholder="4-р тоо">
+        <input type="number" placeholder="5-р тоо">
+        <input type="number" placeholder="6-р тоо">
+        <input type="number" placeholder="7-р тоо">
+        <input type="number" placeholder="8-р тоо">
+        <input type="number" placeholder="9-р тоо">
+        <input type="number" placeholder="10-р тоо">
+        <input type="number" placeholder="11-р тоо">
+        <input type="number" placeholder="12-р тоо">
+        <input type="number" placeholder="13-р тоо">
+        <input type="number" placeholder="14-р тоо">
+        <input type="number" placeholder="15-р тоо">
+        <input type="number" placeholder="16-р тоо">
+        <input type="number" placeholder="17-р тоо">
+        <input type="number" placeholder="18-р тоо">
+        <input type="number" placeholder="19-р тоо">
+        <input type="number" placeholder="20-р тоо">
+    </div>
+
+    <br>
+    <button onclick="calculateSum()">niilber</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            let inputs = document.querySelectorAll("#inputs input");
+            let sum = 0;
+            inputs.forEach(input => {
+                let num = parseFloat(input.value) || 0; 
+                sum += num;
+            });
+            document.getElementById("result").innerText = "20 tooni niilbr: " + sum;
+        }
+    </script>
+</body>
+</html>
