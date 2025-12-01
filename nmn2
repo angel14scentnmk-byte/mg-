@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>4 toonii baga</title>
+</head>
+<body>
+
+    <input id="num1" type="number" placeholder="">
+    <input id="num2" type="number" placeholder="">
+    <input id="num3" type="number" placeholder="">
+    <input id="num4" type="number" placeholder="4">
+    
+    <button onclick="findMin()">hmgiin baga toog oloh</button>
+
+    <p id="result"></p>
+
+    <script>
+        function findmin() {
+            let a = parsefloat(document.getElementById("num1").value);
+            let b = parsefloat(document.getElementById("num2").value);
+            let c = parsefloat(document.getElementById("num3").value);
+            let d = parsefloat(document.getElementById("num4").value);
+
+            let minnum = math.min(a, b, c, d);
+
+            document.getElementById("result").innerText = "hmgiin baga too: " + minnum;
+        }
+
+    </script>
+</body>
+</html>
