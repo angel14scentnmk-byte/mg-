@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FAQ Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page{
+    width:90%;
+    max-width:1100px;
+    background:#e5e5e5;
+    padding:40px;
+    border-radius:18px;
+}
+
+.faq-box{
+    background:#ffffff;
+    border-radius:18px;
+    padding:40px;
+    display:flex;
+    gap:40px;
+}
+
+.faq-left{
+    width:40%;
+}
+
+.faq-left h1{
+    font-size:40px;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.faq-left p{
+    color:#777;
+    margin-bottom:20px;
+}
+
+.faq-left button{
+    padding:10px 18px;
+    border:none;
+    background:#111;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.faq-right{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.item{
+    background:#f9f9f9;
+    padding:18px 20px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.icon{
+    font-size:22px;
+}
+
+.item.open{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.item.open .question{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.answer{
+    margin-top:10px;
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+}
+</style>
+
+</head>
+<body>
+
+<div class="page">
+    <div class="faq-box">
+
+      
+        <div class="faq-left">
+            <h1>
+                Frequently<br>
+                Asked<br>
+                Questions
+            </h1>
+            <p>Find answers to frequently asked questions.</p>
+            <button>Contact us</button>
+        </div>
+
+        
+        <div class="faq-right">
+
+            <div class="item">
+                <span>What is difference among different engines?</span>
+                <span class="icon">+</span>
+            </div>
+
+            <div class="item open">
+                <div class="question">
+                    <span>Why don't charge on resolution by default?</span>
+                    <span class="icon">×</span>
+                </div>
+                <p class="answer">
+                    There are three reasons for it: for a lot of cases, for example sales,
+                    the goal is not to resolve but to screen; targeting only at resolution
+                    creates incentives for simple cases; our aim is to create human
+                    augmentation rather than replacement.
+                </p>
+            </div>
+
+            <div class="item">
+                <span>How can I end the subscription?</span>
+                <span class="icon">+</span>
+            </div>
+
+            <div class="item">
+                <span>What happens after the Free quota?</span>
+                <span class="icon">+</span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
