@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4ede4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      width: 220px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .icon img {
+      width: 80px;
+      height: auto;
+    }
+
+    .coins {
+      background-color: #eadba1ca;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.9em;
+      margin-bottom: 16px;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="icon">
+        
+      </div>
+      <div class="coins">80<br><small>coins</small></div>
+      <h3>Fold the Laundry</h3>
+      <p>Help make the clothes neat by folding them carefully! When you're done, you'll earn coins!</p>
+      <button>I'm Done</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+       
+      </div>
+      <div class="coins">60<br><small>coins</small></div>
+      <h3>Feed the pet</h3>
+      <p>Help keep the pet happy and healthy by feeding them their favorite treats! When you're done, you'll earn coins!</p>
+      <button>I'm Done</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        
+      </div>
+      <div class="coins">75<br><small>coins</small></div>
+      <h3>Help with cooking</h3>
+      <p>Join in the kitchen fun by helping prepare delicious meals! When you're done, you'll earn coins!</p>
+      <button>I'm Done</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+       
+      </div>
+      <div class="coins">75<br><small>coins</small></div>
+      <h3>Play sports</h3>
+      <p>Stay active and have fun by playing your favorite sport! When you're done, you'll earn coins!</p>
+      <button>I'm Done</button>
+    </div>
+  </div>
+</body>
+</html>
